@@ -1,1 +1,1 @@
-'use strict'
+alert('I am working just fine');
