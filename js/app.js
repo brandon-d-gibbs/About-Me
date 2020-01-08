@@ -38,3 +38,27 @@ var age = prompt('Am I over 30?');
             console.log('Sorry, ' + age + ' was not a valid response.');
             //alert('Sorry, ' + age + ' was not a valid response.');
     }
+
+var animals = prompt('Am I a cat person');
+
+    switch(animals.toLowerCase()) {
+        case 'y':
+        console.log('Sorry, trick question. I love pretty much all animals. Ants kinda suck though.');
+        //alert('Sorry, tric question. I love pretty much all animals. Ants kinda suck though.');
+        break;
+        case 'yes':
+        console.log('Sorry, trick question. I love pretty much all animals. Ants kinda suck though.');
+        //alert('Sorry, tric question. I love pretty much all animals. Ants kinda suck though.');
+        break;
+        case 'n':
+        console.log('Sorry, trick question. I love pretty much all animals. Ants kinda suck though.');
+        //alert('Sorry, tric question. I love pretty much all animals. Ants kinda suck though.');
+        break;
+        case 'no':
+        console.log('Sorry, trick question. I love pretty much all animals. Ants kinda suck though.');
+        //alert('Sorry, tric question. I love pretty much all animals. Ants kinda suck though.');
+        break;
+        default:
+        console.log('Sorry, ' + animals + ' is not a valid response.');
+        //alert('Sorry, ' + animals + 'is not a valid response.')
+    }
