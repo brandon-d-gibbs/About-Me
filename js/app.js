@@ -1,3 +1,4 @@
+'use strict'
 //alert('I am working just fine');
 
 /*
@@ -37,7 +38,7 @@ Do I fly planes?
         
 //////
 */
-
+/*
 var myAge = 34;
 
 var name = prompt('Hi, what is your name?');
@@ -171,3 +172,5 @@ switch(planes.toLowerCase()) {
     break;
 
 }
+
+alert('Thank you, ' + name +'. ')
