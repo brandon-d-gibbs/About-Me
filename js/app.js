@@ -166,8 +166,8 @@ switch(planes.toLowerCase()) {
     //alert('Correct. But, I do plan on getting a pilot\s license.');
         break;
     default:
-    console.log('Sorry, ' + plane + 'is not a valid response');
-    //alert('Sorry, ' + plane + 'is not a valid response');
+    console.log('Sorry, ' + planes + 'is not a valid response');
+    //alert('Sorry, ' + planes + 'is not a valid response');
     break;
 
 }
