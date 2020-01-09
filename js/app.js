@@ -12,13 +12,13 @@
 
         /// Extending
 
-        - Create a Top 10. Could be a top 10 of anything we like.
-        - 6th question: 
+        - Create a Top 10. Could be a top 10 of anything we like. ** DONE **
+        - 6th question:  ** DONE **
             -numeric input 
             - indicate if too high, too low, or correct.
             - 4 guesses (up to 4 guesses) After all 4 or correct, display correct answer. (use loop)
 
-        - Convert work experience / education summary to an unordered list (already did thta in v1)
+        - Convert work experience / education summary to an unordered list (already did thta in v1)  ** Done **
 
         - 7th question:
             - many possible answers that are stored in an array.
@@ -60,63 +60,67 @@
         
 //////
 */
-/*
+
 // Variables
 var score = 0;
-
+var yourScore = score + '/7';
 
 
 // Questions
-var myAge = 34;
 
 var name = prompt('Hi, what is your name?');
-console.log(name);
+//console.log(name);
 
 alert('Hey there ' + name + '. My name is Brandon.\n\nLet\s play a game. I will ask 5 questions to help you get to know me. Get as many right as possible.');
 
-var age = prompt('Am I over 30?');
+var question1 = prompt('I had an online business.\n\nWas it a website that sold rodeo equipment?');
 
-    switch(age.toLowerCase()) {
+    switch(question1.toLowerCase()) {
         case 'y':
-            //console.log('Ouch. But, yes. I am ' + myAge + '.');
-            alert('Ouch. But, yes. I am ' + myAge + '.');
-        break;
+            //console.log('No, I'm sorry. That would be funy though.');
+            alert('No, I\'m sorry. That would be funy though.');
+             break;
         case 'yes':
-            //console.log('Ouch. But, yes. I am ' + myAge + '.');
-            alert('Ouch. But, yes. I am ' + myAge + '.');
-        break;
+            //console.log('No, I'm sorry. That would be funy though.');
+            alert('No, I\'m sorry. That would be funy though.');
+             break;
         case 'n':
-            //console.log('Aww, thanks. I am actually ' + myAge + '.');
-            alert('Aww, thanks. I am actually ' + myAge + '.');
+            //console.log('Correct. It was actually an online binary options trading group.');
+            alert('Correct. It was actually an online binary options trading group.');
+            score++;
             break;
-            case 'no':
-            //console.log('Aww, thanks. I am actually ' + myAge + '.');
-            alert('Aww, thanks. I am actually ' + myAge + '.');
+        case 'no':
+            //console.log('Correct. It was actually an online binary options trading group.');
+            alert('Correct. It was actually an online binary options trading group.');
+            score++;
             break;
         default: 
-            //console.log('Sorry, ' + age + ' was not a valid response.');
-            alert('Sorry, ' + age + ' is not a valid response.');
+            //console.log('Sorry, ' + question1 + ' was not a valid response.');
+            alert('Sorry, ' + question1 + ' is not a valid response.');
             break;
     }
+console.log(score + '/7');
 
 var animals = prompt('Am I a cat person');
 
     switch(animals.toLowerCase()) {
         case 'y':
-        //console.log('Sorry, trick question. I love pretty much all animals. Ants kinda suck though.');
-        alert('Sorry, trick question. I love pretty much all animals. Ants kinda suck though.');
+        //console.log('Yes, I am. But I also love dogs, and pretty much all animals. Ants kinda suck though.');
+        alert('Yes, I am. But I also love dogs, and pretty much all animals. Ants kinda suck though.');
+        score++;
         break;
         case 'yes':
-        //console.log('Sorry, trick question. I love pretty much all animals. Ants kinda suck though.');
-        alert('Sorry, trick question. I love pretty much all animals. Ants kinda suck though.');
+        //console.log('Yes, I am. But I also love dogs, and pretty much all animals. Ants kinda suck though.');
+        alert('Yes, I am. But I also love dogs, and pretty much all animals. Ants kinda suck though.');
+        score++;
         break;
         case 'n':
-        //console.log('Sorry, trick question. I love pretty much all animals. Ants kinda suck though.');
-        alert('Sorry, trick question. I love pretty much all animals. Ants kinda suck though.');
+        //console.log('Actually, I am. But I also love dogs, and pretty much all animals. Ants kinda suck though.');
+        alert('Actually, I am. But I also love dogs, and pretty much all animals. Ants kinda suck though.');
         break;
         case 'no':
-        //console.log('Sorry, trick question. I love pretty much all animals. Ants kinda suck though.');
-        alert('Sorry, trick question. I love pretty much all animals. Ants kinda suck though.');
+        //console.log('Actually, I am. But I also love dogs, and pretty much all animals. Ants kinda suck though.');
+        alert('Actually, I am. But I also love dogs, and pretty much all animals. Ants kinda suck though.');
         break;
         default:
         //console.log('Sorry, ' + animals + ' is not a valid response.');
@@ -124,87 +128,96 @@ var animals = prompt('Am I a cat person');
         break;
     }
 
+console.log(score + '/7');
+
 var military = prompt('Was I in the military?');
 
     switch(military.toLowerCase()) {
         case 'y':
-        //console.log('Yes. I spent 4 years in the Marine Corps.');
-        alert('Yes. I spent 4 years in the Marine Corps.');
+            //console.log('Yes. I spent 4 years in the Marine Corps.');
+            alert('Yes. I spent 4 years in the Marine Corps.');
+            score++;
             break;
         case 'yes':
-        //console.log('Yes. I spent 4 years in the Marine Corps.');
-        alert('Yes. I spent 4 years in the Marine Corps.');
+            //console.log('Yes. I spent 4 years in the Marine Corps.');
+            alert('Yes. I spent 4 years in the Marine Corps.');
+            score++;
             break;
         case 'n':
-        //console.log('Sorry, that\s incorrect. I spent 4 years in the Marine Corps.');
-        alert('Sorry, that\s incorrect. I spent 4 years in the Marine Corps.');
+            //console.log('Sorry, that\s incorrect. I spent 4 years in the Marine Corps.');
+            alert('Sorry, that\s incorrect. I spent 4 years in the Marine Corps.');
             break;
         case 'no':
-        //console.log('Sorry, that\s incorrect. I spent 4 years in the Marine Corps.');
-        alert('Sorry, that\s incorrect. I spent 4 years in the Marine Corps.')
+            //console.log('Sorry, that\s incorrect. I spent 4 years in the Marine Corps.');
+            alert('Sorry, that\s incorrect. I spent 4 years in the Marine Corps.')
             break;
         default:
-        //console.log('Sorry, ' + military + 'is not a valid response');
-        alert('Sorry, ' + military + ' is not a valid response');
-        break;
+            //console.log('Sorry, ' + military + 'is not a valid response');
+            alert('Sorry, ' + military + ' is not a valid response');
+            break;
     }
+    console.log(score + '/7');
 
 var bacon = prompt('Do I love bacon?');
 
     switch(bacon.toLowerCase()) {
         case 'y': 
-        //console.log('NOPE! I have been a vegetarian for about 2 years.');
-        alert('NOPE! I have been a vegetarian for about 2 years.');
+            //console.log('NOPE! I have been a vegetarian for about 2 years.');
+            alert('NOPE! I have been a vegetarian for about 2 years.');
             break;
         case 'yes':
-        //console.log('NOPE! I have been a vegetarian for about 2 years.');
-        alert('NOPE! I have been a vegetarian for about 2 years.');
+            //console.log('NOPE! I have been a vegetarian for about 2 years.');
+            alert('NOPE! I have been a vegetarian for about 2 years.');
             break;
         case 'n':
-        //console.log('Great job! I am actually a vegetarian, so no real bacon for me.');
-        alert('Great job! I am actually a vegetarian, so no real bacon for me.');
+            //console.log('Great job! I am actually a vegetarian, so no real bacon for me.');
+            alert('Great job! I am actually a vegetarian, so no real bacon for me.');
+            score++;
             break;
         case 'no':
-        //console.log('Great job! I am actually a vegetarian, so no real bacon for me.');
-        alert('Great job! I am actually a vegetarian, so no real bacon for me.');
+            //console.log('Great job! I am actually a vegetarian, so no real bacon for me.');
+            alert('Great job! I am actually a vegetarian, so no real bacon for me.');
+            score++;
             break;
         default:
-        //console.log('Sorry, ' + bacon + 'is not a valid response');
-        alert('Sorry, ' + bacon + ' is not a valid response');
-        break;
+            //console.log('Sorry, ' + bacon + 'is not a valid response');
+            alert('Sorry, ' + bacon + ' is not a valid response');
+            break;
 
     }
+    console.log(score + '/7');
     
 var planes = prompt('Do I fly panes in my spare time?');
 
 switch(planes.toLowerCase()) {
     case 'y':
-    //console.log('No, but I really want to get my pilot\s license');
-    alert('No, but I really want to get my pilot\s license');
+        //console.log('No, but I really want to get my pilot\s license');
+        alert('No, but I really want to get my pilot\s license');
         break;
     case 'yes':
-    //console.log('No, but I really want to get my pilot\s license');
-    alert('No, but I really want to get my pilot\s license');
+        //console.log('No, but I really want to get my pilot\s license');
+        alert('No, but I really want to get my pilot\s license');
         break;
     case 'n':
-    //console.log('Correct. But, I do plan on getting a pilot\s license.');
-    alert('Correct. But, I do plan on getting a pilot\s license.');
+        //console.log('Correct. But, I do plan on getting a pilot\s license.');
+        alert('Correct. But, I do plan on getting a pilot\s license.');
+        score++;
         break;
     case 'no':
-    //console.log('Correct. But, I do plan on getting a pilot\s license.');
-    alert('Correct. But, I do plan on getting a pilot\s license.');
+        //console.log('Correct. But, I do plan on getting a pilot\s license.');
+        alert('Correct. But, I do plan on getting a pilot\s license.');
+        score++;
         break;
     default:
-    //console.log('Sorry, ' + planes + 'is not a valid response');
-    alert('Sorry, ' + planes + ' is not a valid response');
-    break;
+        //console.log('Sorry, ' + planes + 'is not a valid response');
+        alert('Sorry, ' + planes + ' is not a valid response');
+        break;
 
 }
+console.log(score + '/7');
 
 
-*/
-
-// Question 6
+///////    Question 6     ///////
 var guessesRemaining = 4;
 
 for (var a = 0; a < 4; a++) {
@@ -241,11 +254,73 @@ for (var a = 0; a < 4; a++) {
             case (guessAge == 34):                
                 console.log('Great guess. I am ' + guessAge + '. No need to keep guessing.');
                 a = a+4;
+                score++;
                 break; 
             }               
 
 
 
         }
+        console.log(score + '/7');
+
+alert('Thank you for playing. You got ' + score + '/7 right.');
+        
+    
+
+// //////    Question 7    //////
+// var favFoods = ['Tacos', 'Curry', 'Lasagna'];
+// var foodResponse = '';
+// var foodGuess = '';
+
+
+
+// for (var i = 0; i < 6; i++){
+//     //foodResponse = prompt('What is one of my top 10 foods?');
+//     foodResponse = prompt('What is one of my favorite foods?').toLowerCase();
+//     console.log(foodResponse + 'FR')
+//     foodGuess = favFoods.toLowerCase().includes(foodResponse);
+//     console.log(foodGuess + 'FG');
+//     // favFoods.includes(prompt('What is one of my favorte foods?'));
+//     // console.log(foodResponse + 'FR'); 
+
+    
+    
+    
+
+    
+
+    // switch (true) {
+    //     case (foodGuess):
+    //     alert('Yep!');
+    //     i = 7;
+    //     break;
+    
+// *********** For some reason anything put into the prompt evaluates to true??????? **************
+   /*
+    switch(true){
+        case (foodResponse.toLowerCase() == favFoods.includes(prompt('What is one of my top 10 favorite foods?').toLowerCase())):
+            console.log('Yep, I love ' + foodResponse + '.');
+            alert('Great guess. Some of my favorite foods include ' + favFoods.join(" , ").toLowerCase() + '.');  // ****** come back and make sure that all possible answer are given to the user ******
+            i=7;
+            break;
+        default: 
+            console.log('I\'m not really a picky eater, but that is not in my top10.');
+            alert('I\'m not really a picky eater, but that is not in my top10.');
+            break;
+
+    }
+    
+    }
+***************
+    /*
+    switch(true){
+        case (foodResponse.toLowerCase() === favFoods[i].toLowerCase()):
+        console.log('Oh yeah, I love ' + foodResponse + '!');
+        //alert('Oh yeah, I love' + foodResponse + '!');
+        i = 7;
+        break;
+    }*/
+
+
 
 //alert('Thank you, ' + name +'. I appreciate you taking a moment to get to know about me. \nI can\'t wait to get to know more about you.');
