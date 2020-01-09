@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 //alert('I am working just fine');
 
 /*
@@ -9,6 +9,28 @@
         Was I in the military?
         Do I enjoy eating bacon?
         Do I fly planes?
+
+        /// Extending
+
+        - Create a Top 10. Could be a top 10 of anything we like.
+        - 6th question: 
+            -numeric input 
+            - indicate if too high, too low, or correct.
+            - 4 guesses (up to 4 guesses) After all 4 or correct, display correct answer. (use loop)
+
+        - Convert work experience / education summary to an unordered list (already did thta in v1)
+
+        - 7th question:
+            - many possible answers that are stored in an array.
+            - guesses end once a correct answer is chosen or fail on the 6th try.
+            - once failed or won display all possible correct answers
+            - use a loop
+
+        - Display final score
+
+        -refactor firs 5 yes/no questions into an array / loop.
+            try this using a 'for loop'
+
 
 ///// copy of highly repeated 
 
@@ -38,7 +60,13 @@
         
 //////
 */
+/*
+// Variables
+var score = 0;
 
+
+
+// Questions
 var myAge = 34;
 
 var name = prompt('Hi, what is your name?');
@@ -173,4 +201,45 @@ switch(planes.toLowerCase()) {
 
 }
 
-alert('Thank you, ' + name +'. I appreciate you taking a moment to get to know about me. \nI can\'t wait to get to know more about you.');
+
+*/
+
+// Question 6
+var guessesRemaining = 4;
+
+for (var a = 0; a < 4; a++) {
+    var guessAge = prompt('How old do you think I am?');
+    
+        switch(true){
+           
+            /* case (guessAge == 0):
+                console.log('Come on, really?\n\n If I took the time to code this, the least you could do is type in two digits.\n\nThis won\'t go away until you actually make 4 real guesses.');
+                //alert('Come on, really?\n\n If I took the time to code this, the least you could do is type in two digits.\n\nThis won\'t go away until you actually make 4 real guesses.');
+                a = 0;
+                break;
+            */
+            case (guessAge <= 25):
+                console.log('Aww, you\'re so nice. But ' + guessAge +' is too low.');
+                 //alert('Aww, you\'re so nice. But' + guessAge +' is too low.');
+                break;
+
+            case (guessAge < 34): 
+                console.log('You\'re getting closer. Your next guess should be just a little higher than ' + guessAge + '. Let\s not get too crazy.');
+                //alert('You\'re getting closer. Your next guess should be just a little higher than ' + guessAge + '. Let\s not get too crazy.');
+                break;
+
+            case (guessAge > 34):
+                console.log('Ouch. Nope, try gussing lower than ' + guessAge + '.');
+                break;
+
+            case (guessAge == 34):                
+                console.log('Great guess. I am ' + guessAge + '. No need to keep guessing.');
+                a = a+4;
+                break; 
+            }               
+
+
+
+        }
+
+//alert('Thank you, ' + name +'. I appreciate you taking a moment to get to know about me. \nI can\'t wait to get to know more about you.');
