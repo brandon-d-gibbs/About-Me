@@ -212,12 +212,18 @@ for (var a = 0; a < 4; a++) {
     
         switch(true){
            
-            /* case (guessAge == 0):
+            case (isNaN(guessAge)):
+                console.log('Seriousy, that is not a number. That guess diddn\'t count.');
+                //alert('Seriousy, that is not a number. That guess diddn\'t count.'); 
+                a = 0;               
+                break;
+
+            case (guessAge == 0):
                 console.log('Come on, really?\n\n If I took the time to code this, the least you could do is type in two digits.\n\nThis won\'t go away until you actually make 4 real guesses.');
                 //alert('Come on, really?\n\n If I took the time to code this, the least you could do is type in two digits.\n\nThis won\'t go away until you actually make 4 real guesses.');
                 a = 0;
                 break;
-            */
+            
             case (guessAge <= 25):
                 console.log('Aww, you\'re so nice. But ' + guessAge +' is too low.');
                  //alert('Aww, you\'re so nice. But' + guessAge +' is too low.');
