@@ -60,7 +60,7 @@
         
 //////
 */
-
+/*
 // Variables
 var score = 0;
 var yourScore = score + '/7';
@@ -186,6 +186,8 @@ var bacon = prompt('Do I love bacon?');
 
     }
     console.log(score + '/7');
+
+
     
 var planes = prompt('Do I fly panes in my spare time?');
 
@@ -216,10 +218,10 @@ switch(planes.toLowerCase()) {
 }
 console.log(score + '/7');
 
-
+*/
 ///////    Question 6     ///////
-var guessesRemaining = 4;
-
+// not used yet // var guessesRemaining = 4;
+/*
 for (var a = 0; a < 4; a++) {
     var guessAge = prompt('How old do you think I am?');
     
@@ -265,38 +267,112 @@ for (var a = 0; a < 4; a++) {
 
 alert('Thank you for playing. You got ' + score + '/7 right.');
         
-    
+*/   
 
+
+
+// prompt a user to input a correct answer to a single question 
+        //array with possible answers
+        // search through this array
+        // if correct alert 'correct...' - incriment score - break
+        // if incorrect alert 'incorrect...' and continue loops until....
+// 6 attempts to get a correct answer
+        // loop to prompt multiple guesses
+        
+// if correct or runs out of attemtps, display array (possible correct answers)
+
+function checkArray(foodArray, guess){
+    for(var f = 0; f < foodArray.length; f++) {
+        if(guess.toLowerCase() === foodArray[f].toLowerCase()) {
+            alert('Yes! These are my top 5 favorite foods: ' + foodArray.join(', ') +'.');
+           // score++;
+           return true;
+        }
+} 
+        return false;
+}
+
+var food = ['curry', 'tacos', 'lasagna', 'thai', 'mexican'];
+foodQuestion:
+for(var i = 0; i < 6; i++) {
+    var foodGuess = prompt('What is one of my top favorite foods?');
+    console.log('worked' + i);
+    if (checkArray(food, foodGuess)) {
+        break foodQuestion;
+   }
+   alert('Sorry, that\'s not one of my favorites.');
+    
+    // arrayChecker:for(var f = 0; f < food.length; f++) {
+    //     if(foodGuess.toLowerCase() === food[f].toLowerCase()) {
+    //         alert('Yes! These are my top 5 favorite foods: ' + food.join(', ') +'.');
+    //        // score++;
+    //        break foodQuestion;
+    //     }
+    if(i === 5) {
+    
+    alert('Sorry you didn\'t get one right. Here is a list of my top 5 favorite foods: \n\n' + food.join(', ') );
+    }
+    }
+    //alert('Sorry, that\'s not one of my favorites.');
+    // if(i === 5) {
+    //     alert('Sorry you didn\'t get one right. Here is a list of my top 5 favorite foods: \n\n' + food.join(', ') );
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 // //////    Question 7    //////
-// var favFoods = ['Tacos', 'Curry', 'Lasagna'];
+// var favFoods = ['Tacos', 'Curry', 'Lasagna', ''];
 // var foodResponse = '';
 // var foodGuess = '';
 
 
 
-// for (var i = 0; i < 6; i++){
-//     //foodResponse = prompt('What is one of my top 10 foods?');
-//     foodResponse = prompt('What is one of my favorite foods?').toLowerCase();
+// for (var i = 0; i < 5; i++){
+
 //     console.log(foodResponse + 'FR')
 //     foodGuess = favFoods.toLowerCase().includes(foodResponse);
 //     console.log(foodGuess + 'FG');
 //     // favFoods.includes(prompt('What is one of my favorte foods?'));
 //     // console.log(foodResponse + 'FR'); 
 
-    
+
+while(x<6){
+    var question7 = prompt('What are my favorite cars?');
+    x++;
+    if(answers.includes(question7)){ alert('Good job! You win! Here are the acceptable answers ' +answers+'.');
+      x=6;
+      correctanswers++;
+    }else if(x===4){alert('Try an older Nissan sports car.');
+    }else if(x===6){alert('Sorry, try again sometime here are the correct answers ' +answers+'.');
+    }else{alert('Try again');
+    }
+  }
+  alert('Congrats! You got ' +correctanswers+ ' out of 7 questions correct.');
     
     
 
     
 
-    // switch (true) {
+   // switch (true) {
     //     case (foodGuess):
     //     alert('Yep!');
     //     i = 7;
     //     break;
     
 // *********** For some reason anything put into the prompt evaluates to true??????? **************
-   /*
+   
+
+
     switch(true){
         case (foodResponse.toLowerCase() == favFoods.includes(prompt('What is one of my top 10 favorite foods?').toLowerCase())):
             console.log('Yep, I love ' + foodResponse + '.');
@@ -319,8 +395,8 @@ alert('Thank you for playing. You got ' + score + '/7 right.');
         //alert('Oh yeah, I love' + foodResponse + '!');
         i = 7;
         break;
-    }*/
+    }
 
-
+*/
 
 //alert('Thank you, ' + name +'. I appreciate you taking a moment to get to know about me. \nI can\'t wait to get to know more about you.');
