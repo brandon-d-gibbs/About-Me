@@ -127,6 +127,53 @@ var animals = prompt('Am I a cat person');
         alert('Sorry, ' + animals + ' is not a valid response.');
         break;
     }
+switch(age.toLowerCase()) {
+case 'y':
+  //console.log('Ouch. But, yes. I am ' + myAge + '.');
+  alert('Ouch. But, yes. I am ' + myAge + '.');
+  break;
+case 'yes':
+  //console.log('Ouch. But, yes. I am ' + myAge + '.');
+  alert('Ouch. But, yes. I am ' + myAge + '.');
+break;
+case 'n':
+  //console.log('Aww, thanks. I am actually ' + myAge + '.');
+  alert('Aww, thanks. I am actually ' + myAge + '.');
+  break;
+case 'no':
+  //console.log('Aww, thanks. I am actually ' + myAge + '.');
+  alert('Aww, thanks. I am actually ' + myAge + '.');
+  break;
+default: 
+  //console.log('Sorry, ' + age + ' was not a valid response.');
+  alert('Sorry, ' + age + ' is not a valid response.');
+  break;
+}
+
+var animals = prompt('Am I a cat person');
+
+switch(animals.toLowerCase()) {
+case 'y':
+  //console.log('Sorry, trick question. I love pretty much all animals. Ants kinda suck though.');
+  alert('Sorry, trick question. I love pretty much all animals. Ants kinda suck though.');
+  break;
+case 'yes':
+  //console.log('Sorry, trick question. I love pretty much all animals. Ants kinda suck though.');
+  alert('Sorry, trick question. I love pretty much all animals. Ants kinda suck though.');
+  break;
+case 'n':
+  //console.log('Sorry, trick question. I love pretty much all animals. Ants kinda suck though.');
+  alert('Sorry, trick question. I love pretty much all animals. Ants kinda suck though.');
+  break;
+case 'no':
+  //console.log('Sorry, trick question. I love pretty much all animals. Ants kinda suck though.');
+  alert('Sorry, trick question. I love pretty much all animals. Ants kinda suck though.');
+  break;
+default:
+  //console.log('Sorry, ' + animals + ' is not a valid response.');
+  alert('Sorry, ' + animals + ' is not a valid response.');
+  break;
+}
 
 console.log(score + '/7');
 
@@ -188,40 +235,84 @@ var bacon = prompt('Do I love bacon?');
     console.log(score + '/7');
 
 
+switch(military.toLowerCase()) {
+case 'y':
+  //console.log('Yes. I spent 4 years in the Marine Corps.');
+  alert('Yes. I spent 4 years in the Marine Corps.');
+  break;
+case 'yes':
+  //console.log('Yes. I spent 4 years in the Marine Corps.');
+  alert('Yes. I spent 4 years in the Marine Corps.');
+  break;
+case 'n':
+  //console.log('Sorry, that\s incorrect. I spent 4 years in the Marine Corps.');
+  alert('Sorry, that\s incorrect. I spent 4 years in the Marine Corps.');
+  break;
+case 'no':
+  //console.log('Sorry, that\s incorrect. I spent 4 years in the Marine Corps.');
+  alert('Sorry, that\s incorrect. I spent 4 years in the Marine Corps.')
+  break;
+default:
+  //console.log('Sorry, ' + military + 'is not a valid response');
+  alert('Sorry, ' + military + ' is not a valid response');
+  break;
+}
+
+var bacon = prompt('Do I love bacon?');
+
+switch(bacon.toLowerCase()) {
+case 'y': 
+  //console.log('NOPE! I have been a vegetarian for about 2 years.');
+  alert('NOPE! I have been a vegetarian for about 2 years.');
+  break;
+case 'yes':
+  //console.log('NOPE! I have been a vegetarian for about 2 years.');
+  alert('NOPE! I have been a vegetarian for about 2 years.');
+  break;
+case 'n':
+  //console.log('Great job! I am actually a vegetarian, so no real bacon for me.');
+  alert('Great job! I am actually a vegetarian, so no real bacon for me.');
+  break;
+case 'no':
+  //console.log('Great job! I am actually a vegetarian, so no real bacon for me.');
+  alert('Great job! I am actually a vegetarian, so no real bacon for me.');
+  break;
+default:
+  //console.log('Sorry, ' + bacon + 'is not a valid response');
+  alert('Sorry, ' + bacon + ' is not a valid response');
+  break;
+}
     
 var planes = prompt('Do I fly panes in my spare time?');
 
 switch(planes.toLowerCase()) {
-    case 'y':
-        //console.log('No, but I really want to get my pilot\s license');
-        alert('No, but I really want to get my pilot\s license');
-        break;
-    case 'yes':
-        //console.log('No, but I really want to get my pilot\s license');
-        alert('No, but I really want to get my pilot\s license');
-        break;
-    case 'n':
-        //console.log('Correct. But, I do plan on getting a pilot\s license.');
-        alert('Correct. But, I do plan on getting a pilot\s license.');
-        score++;
-        break;
-    case 'no':
-        //console.log('Correct. But, I do plan on getting a pilot\s license.');
-        alert('Correct. But, I do plan on getting a pilot\s license.');
-        score++;
-        break;
-    default:
-        //console.log('Sorry, ' + planes + 'is not a valid response');
-        alert('Sorry, ' + planes + ' is not a valid response');
-        break;
+case 'y':
+  //console.log('No, but I really want to get my pilot\s license');
+  alert('No, but I really want to get my pilot\s license');
+  break;
+case 'yes':
+  //console.log('No, but I really want to get my pilot\s license');
+  alert('No, but I really want to get my pilot\s license');
+  break;
+case 'n':
+  //console.log('Correct. But, I do plan on getting a pilot\s license.');
+  alert('Correct. But, I do plan on getting a pilot\s license.');
+  break;
+case 'no':
+  //console.log('Correct. But, I do plan on getting a pilot\s license.');
+  alert('Correct. But, I do plan on getting a pilot\s license.');
+  break;
+default:
+  //console.log('Sorry, ' + planes + 'is not a valid response');
+  alert('Sorry, ' + planes + ' is not a valid response');
+  break;
 
-}
-console.log(score + '/7');
+        }
+        console.log(score + '/7');
 
 */
 ///////    Question 6     ///////
-// not used yet // var guessesRemaining = 4;
-/*
+
 for (var a = 0; a < 4; a++) {
     var guessAge = prompt('How old do you think I am?');
     
@@ -265,9 +356,10 @@ for (var a = 0; a < 4; a++) {
         }
         console.log(score + '/7');
 
-alert('Thank you for playing. You got ' + score + '/7 right.');
+
+
         
-*/   
+  
 
 
 
@@ -319,7 +411,7 @@ for(var i = 0; i < 6; i++) {
     // }
 
 
-
+    alert('Thank you for playing. You got ' + score + '/7 right.');
 
 
 
